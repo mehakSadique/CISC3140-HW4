@@ -31,12 +31,6 @@ where winner in('Theodore Roosevelt','Woodrow Wilson','Jimmy Carter','Barack Oba
 
 select winner from nobel where winner like'John%'
 
-/*
- Show the year, subject, and name of Physics winners for 1980 together with the Chemistry winners for 1984.
-*/
-select yr,subject,winner 
-from nobel 
-where (subject='Physics' and yr=1980) or (subject='Chemistry' and yr=1984)
 
 /*
  Show the year, subject, and name of winners for 1980 excluding Chemistry and Medicine*/
@@ -59,7 +53,7 @@ select * from nobel where winner='PETER GRÜNBERG'
 
 /* Find all details of the prize won by EUGENE O'NEILL*/
 
-select * from nobel where winner like'EUGENE O''NEILL'   #这里引号使用注意
+select * from nobel where winner like'EUGENE O''NEILL'
 
 
 /* List the winners, year and subject where the winner starts with Sir. Show the the most recent first, then by name order.
